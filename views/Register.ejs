@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+<body>
+    <div class="alert alert-warning" role="alert" <%- isWrong %>>
+        <strong>Periksa kembali data-data Anda!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button> 
+    </div>
+      
+    <div class="container p-4">
+        <div class="card register-form">
+            <form action="/register" method="post">
+                <h1 class="text-center">SIGN UP</h1>
+                <hr>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" aria-describedby="emailHelp" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" class="form-control" id="confirm_password" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                </div>
+                <hr>
+                <div class="text-center color-dark">
+                    <p>Sudah punya akun? <a href="/login">Login sekarang!</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- <form action="/register" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" name="username" id="username" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" name="password" id="password" required><br><br>
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" name="confirm_password" id="confirm_password" required><br><br>
+    <button type="submit" class="btn btn-primary btn-block" style="cursor: pointer;">Sign Up</button>
+</form> -->

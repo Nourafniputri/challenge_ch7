@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(57, 54, 54);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* color: rgb(128, 109, 59); */
+}
+
+.register-form {
+    height: 530px;
+    width: 360px;
+    padding: 0 30px;
+    background-color: rgb(128, 109, 59);
+    border-radius: 15px;
+}

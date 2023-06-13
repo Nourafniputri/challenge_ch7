@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(57, 54, 54);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 330px;
+    padding: 0 30px;
+    background-color: rgb(128, 109, 59);
+    border-radius: 30px;
+}
+
+.btn {
+    margin-bottom: 30px;
+    
+}
